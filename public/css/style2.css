@@ -1,0 +1,94 @@
+.container-main{
+    height:600px;
+    width:100%;
+    background-color: antiquewhite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    height:100px;
+    width:1000px;
+    background-color: black;
+}
+#form-join{
+    height:200px;
+    width:300px;
+    margin:50%;
+    border:2px solid black;
+    
+}
+label{
+    margin-left:10px;
+    margin-top: 30px;
+}
+#join-btn{
+    margin-top:20px;
+    margin-left:60px;
+}
+
+.chat-container{
+    height:600px;
+    width:600px;
+    margin-top:8%;
+    margin-left: 30%;
+    border:2px solid black;
+    position:relative;
+    overflow: hidden;
+}
+.chat-header{
+    background-color: black;
+    height: 50px;
+    width: 600px;
+    position: absolute;
+}
+#leave-btn{
+    height:50px;
+    width:179px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    position:absolute;
+    background-color: burlywood;
+    text-decoration: none;
+    
+}
+.chat-main{
+    position: absolute;
+    margin-top: 50px;
+    background-color: lightgreen;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.chat-sidebar{
+    background-color: lightblue;
+    width: 200px;
+    overflow-y: scroll;
+}
+.chat-messages{
+    background-color: bisque;
+    width:470px;
+    overflow-y: scroll;
+}
+.chat-form-container{
+    background-color: lightpink;
+    position: absolute;
+    margin-top: 550px;
+    width: 600px;
+    height:50px;
+    display: flex;
+    flex-direction: column;
+}
+#msg{
+    height:48px;
+    width:500px;
+}
+.btn{
+    background-color: lightskyblue;
+    height: 48px;
+    width:80px;
+    margin-top:0;
+    padding: 0;
+}
