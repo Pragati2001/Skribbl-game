@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <canvas id="canvas" height="500px" width="800px"></canvas>
+    <div class="tools">
+        
+        <div onclick="toggleEraser()" class="color-field" id="eraser" style="background: white;">Eraser</div>
+        <div onclick="selectPen(this)" class="color-field" style="background: red;"></div>
+        <div onclick="selectPen(this)" class="color-field" style="background: green;"></div>
+        <div onclick="selectPen(this)" class="color-field" style="background: yellow;"></div>
+        <div onclick="selectPen(this)" class="color-field" style="background: blue;"></div>
+        <div onclick="selectPen(this)" class="color-field" style="background: pink;"></div>
+        <button onclick="clearCanvas()" type="button" class="button">Clear</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
