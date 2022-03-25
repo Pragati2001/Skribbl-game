@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.start-block{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:"one two two"
+    "one three three"
+    "one four four";
+    height: 700px;
+    width: 100%;
+    /* background-color: rgb(255, 234, 231); */
+    background-image: url('../assets/bg3.png');
+    
+}
+
+
+.scribbl-heading{
+    font-family: cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    /* background-color: brown; */
+    /* width: 700px; */
+    grid-area:two;
+    /* padding-left: 12rem; */
+    /* background-color: aquamarine; */
+}

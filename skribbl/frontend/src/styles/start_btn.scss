@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+$blue: #3498db;
+$red: #e74c3c;
+.start_btn{
+    grid-area:three;
+    // background-color: #e74c3c;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $red;
+    border-radius: 0.6em;
+    
+    // color: $red;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 2.5em 4.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  
+    &:hover,
+    &:focus {
+      color: lightblue;
+      outline: 0;
+    }
+    .start_wrd{
+        color: black;
+        font-family: 'VT323', monospace;
+        font-size: 3rem;
+    }
+  }
+  .third {
+    border-color: $blue;
+    color: rgb(185, 184, 184);
+    box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 $blue;
+    transition: all 150ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+    }
+  }
+    
