@@ -1,26 +1,20 @@
-import "./App.css";
+
 import Start from './components/Start'
 import Main_Page from "./components/Main_Page";
-import { useDispatch, useSelector } from "react-redux";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import {useEffect} from 'react';
 import { io } from "socket.io-client";
+import { useState } from 'react';
 
 function App() {
-  const { gameState } = useSelector((state) => state.RoomStore);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-
-    const newSocket = io("http://localhost:5000");
-    dispatch(connectSocket(newSocket));
-    return () => newSocket.close();
-  }, [dispatch]);
+  const [check,setCheck]=useState("true");
+  function onstart()
+  {
+    setCheck("false");
+  }
   return (
     <div className="App">
-      {gameState === "none" && <Start />}
-      {gameState === "lobby" && <Main_Page />}
-        
+      {check==='true'&&<><Start onstart={onstart}/> </> }
+      {check==='false'&&<>
+      <Main_Page /></>}
     </div>
   );
 }
