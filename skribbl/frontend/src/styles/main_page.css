@@ -1,3 +1,32 @@
 .main_page{
     display: flex;
+    /* background-color: yellow; */
 }
+.chat-app{
+    background-color: bisque;
+    margin-left: 14%;
+    width: 450px;
+    height: 600px;
+  }
+  .chat-div{
+    height: 600px;
+    width:450px;
+    border:2px solid black;
+    
+  }
+  header{
+    display: flex;
+  }
+  form{
+      height: 50px;
+  bottom: 0; 
+  }
+  .inp-form{
+      height: 50px;
+      width: 300px;
+      left: 0;
+  }
+  .btn-form{
+    height: 50px;
+    width: 100px;
+  }
